@@ -64,6 +64,7 @@ pipeline {
         stage('Parallel Stages') {
             Parallel {
                 stage('STAGE-1') {
+                    
                     steps {
                         script {
                             sh """
