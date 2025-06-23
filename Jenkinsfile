@@ -2,7 +2,7 @@ pipeline {
     agent { label 'AGENT-1' }
     environment { 
         PROJECT = 'EXPENSE'
-        COMPONENT = 'BACKEND'
+        COMPONENT = 'FRONTEND'
     }
     options {
         disableConcurrentBuilds()
@@ -62,3 +62,4 @@ pipeline {
         }
     }
 }
+
