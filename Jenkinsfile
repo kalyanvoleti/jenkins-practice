@@ -4,6 +4,9 @@ pipeline {
         PROJECT = 'EXPENSE'
         COMPONENT = 'BACKEND'
     }
+    options {
+        disableConcurrentBuilds()
+    }
     stages {
         stage('Build') {
             steps {
@@ -11,6 +14,7 @@ pipeline {
                     sh """
                         echo "Hello this is Build"
                         echo "Project: $PROJECT"
+                        sleep 15
                     """
                 }
             }
