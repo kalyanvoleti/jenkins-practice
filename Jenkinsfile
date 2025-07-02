@@ -25,6 +25,7 @@ pipeline {
                     script {
                         sh """
                             echo "Hello Test"
+                            ask
                         """
                     }
                 }
