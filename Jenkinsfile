@@ -62,6 +62,7 @@ pipeline {
                     script {
                         sh """
                             echo "Hello Test"
+                            sgh
                         """
                     }
                 }
